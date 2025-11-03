@@ -22,7 +22,8 @@ class MainActivity : ComponentActivity() {
                     startDestination = "home"
                 ) {
                     composable("home") { HomeScreen(navController) }
-                    composable("imc") { ImcScreen() }
+                    composable("imc") { ImcScreen(navController) }
+
 
                     // Estas se crearán más adelante
                     composable("recipes") {
