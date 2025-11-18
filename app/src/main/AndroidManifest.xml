@@ -10,7 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Nutricion">
+        android:theme="@style/Theme.Nutricion"
+        tools:ignore="ExtraText">
+
+        <!-- Activity Principal (Compose) -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -18,10 +21,24 @@
             android:theme="@style/Theme.Nutricion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- NUEVAS ACTIVITIES DEL RECETARIO -->
+
+        <!-- Menú del recetario -->
+        <activity
+            android:name=".ui.screens.recetas.RecetarioMenuActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        android:exported="false" />
+
+        <!-- Activity genérica para mostrar las 9 recetas -->
+        <activity
+            android:name=".ui.screens.recetas.RecipeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        android:exported="false" />
+
     </application>
 
 </manifest>

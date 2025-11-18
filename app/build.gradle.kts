@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -27,6 +29,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -34,6 +37,7 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
     buildFeatures {
         compose = true
     }
@@ -56,6 +60,12 @@ dependencies {
     // Navegación con Compose
     implementation("androidx.navigation:navigation-compose:2.8.0")
 
+    // ROOM — base de datos
+    implementation("androidx.room:room-runtime:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+
+    implementation(libs.androidx.appcompat)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
