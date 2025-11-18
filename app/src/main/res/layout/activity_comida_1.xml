@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_comida1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pollo a la plancha con vegetales"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/txtIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes:\n• 150 g de pechuga de pollo\n• Brócoli, zanahoria, calabaza\n• 1 cdita de aceite de oliva\n• Sal y pimienta al gusto"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/txtCalorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calorías: 450 kcal"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/txtPreparation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preparación:\n1. Sazonar y cocinar la pechuga a la plancha.\n2. Cocer al vapor los vegetales.\n3. Servir acompañado del pollo."
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◀"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btnComidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comidas"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
