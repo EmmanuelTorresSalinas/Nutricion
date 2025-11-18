@@ -15,7 +15,7 @@ import com.example.nutricion.ui.screens.recetas.RecetarioMenuActivity
 @Composable
 fun HomeScreen(navController: NavController) {
 
-    val context = LocalContext.current  // Necesario para abrir Activities XML
+    val context = LocalContext.current  // Necesario para abrir Activities XML.
 
     Scaffold(
         topBar = {
